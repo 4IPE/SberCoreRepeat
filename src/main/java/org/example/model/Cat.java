@@ -1,11 +1,10 @@
 package org.example.model;
 
-public class Cat {
-    private String name;
+import org.springframework.stereotype.Component;
 
-    public Cat(String name) {
-        this.name = name;
-    }
+@Component
+public class Cat {
+    private String name = "Cat";
 
     public String getName() {
         return name;

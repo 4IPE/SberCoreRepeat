@@ -1,12 +1,16 @@
 package org.example.model;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+@Component
 public class Person {
-    private final List<Parrot> parrots;
-    private final Cat cat;
-    private final Dog dog;
+    private List<Parrot> parrots;
+    private Cat cat;
+    private Dog dog;
 
+    @Autowired
     public Person(List<Parrot> parrots, Cat cat, Dog dog) {
         this.parrots = parrots;
         this.cat = cat;
